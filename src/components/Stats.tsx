@@ -39,7 +39,7 @@ export default function Stats() {
       <div className="stats-grid">
         <div className="stat-item">
           <div className="stat-number">
-            <CountUp target={50} />
+            <CountUp target={17} />
             <span>+</span>
           </div>
           <div className="stat-label">Projetos Entregues</div>
