@@ -10,7 +10,8 @@ const CountUp = ({ target }: { target: number }) => {
     if (!isInView) return;
 
     let current = 0;
-    const step = target / 60;
+    // Conta durante 1.5 segundos (1500ms). Atualiza a cada 30ms -> 50 passos
+    const step = target / 50; 
     const timer = setInterval(() => {
       current += step;
       if (current >= target) {
@@ -19,7 +20,7 @@ const CountUp = ({ target }: { target: number }) => {
       } else {
         setCount(Math.floor(current));
       }
-    }, 20);
+    }, 30);
 
     return () => clearInterval(timer);
   }, [target, isInView]);
