@@ -9,8 +9,6 @@ export default function Footer() {
         <p>© 2025 Donfim Tech. Construindo o futuro digital.</p>
 
         <div className="footer-links">
-          <a href="#">Instagram</a>
-          <a href="#">LinkedIn</a>
           <a href="mailto:contato@donfimtech.com">Email</a>
         </div>
       </div>
